@@ -1,188 +1,204 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Director Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #121212;
-            color: #E0E0E0;
-        }
-        .hero-text {
-            font-size: clamp(2.5rem, 10vw, 6rem);
-            font-weight: 900;
-            line-height: 1.1;
-            letter-spacing: -0.02em;
-        }
-        .section-title {
-            font-size: clamp(2rem, 8vw, 4rem);
-            font-weight: 700;
-            line-height: 1.2;
-        }
-        .project-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .tag {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            font-size: 0.875rem;
-            font-weight: 500;
-            transition: background-color 0.3s ease;
-        }
-        .tag:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-        .smooth-scroll {
-            scroll-behavior: smooth;
-        }
-    </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
 </head>
-<body class="smooth-scroll">
-
-    <!-- Header -->
-    <header class="fixed w-full top-0 z-50 bg-black bg-opacity-50 backdrop-blur-lg">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-wider">YOUR NAME</a>
-            <nav>
-                <a href="#work" class="mx-2 text-gray-300 hover:text-white transition-colors duration-300">Work</a>
-                <a href="#about" class="mx-2 text-gray-300 hover:text-white transition-colors duration-300">About</a>
-                <a href="#contact" class="mx-2 text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero" class="min-h-screen flex items-center justify-center text-center">
-        <div class="container mx-auto px-6">
-            <h1 class="hero-text text-white">
-                A Creative Art Director <br> & Visual Storyteller.
-            </h1>
-            <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-400">
-                I create impactful visual narratives that connect brands with their audiences. 
-                Specializing in digital campaigns, branding, and interactive experiences.
-            </p>
-            <a href="#work" class="mt-8 inline-block bg-white text-black font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-colors duration-300">
-                View My Work
-            </a>
-        </div>
-    </section>
-
-    <!-- Work Section -->
-    <section id="work" class="py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="section-title text-center mb-12 text-white">Featured Projects</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
-                <!-- Project 1 -->
-                <div class="project-card bg-[#1E1E1E] rounded-lg overflow-hidden">
-                    <img src="https://placehold.co/600x400/333/FFF?text=Project+One" alt="Project 1" class="w-full h-64 object-cover">
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold text-white mb-2">Project Title One</h3>
-                        <p class="text-gray-400 mb-4">A brief description of the project, its goals, and your role. This was a campaign for a major tech brand.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="tag">Art Direction</span>
-                            <span class="tag">Branding</span>
-                            <span class="tag">UI/UX</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card bg-[#1E1E1E] rounded-lg overflow-hidden">
-                    <img src="https://placehold.co/600x400/444/FFF?text=Project+Two" alt="Project 2" class="w-full h-64 object-cover">
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold text-white mb-2">Project Title Two</h3>
-                        <p class="text-gray-400 mb-4">This project involved creating a unique visual identity for a fashion startup, from logo to lookbook.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="tag">Visual Identity</span>
-                            <span class="tag">Photography</span>
-                            <span class="tag">Print</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card bg-[#1E1E1E] rounded-lg overflow-hidden">
-                    <img src="https://placehold.co/600x400/555/FFF?text=Project+Three" alt="Project 3" class="w-full h-64 object-cover">
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold text-white mb-2">Project Title Three</h3>
-                        <p class="text-gray-400 mb-4">An interactive web experience for a music festival, designed to be engaging and user-friendly.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="tag">Web Design</span>
-                            <span class="tag">Motion Graphics</span>
-                            <span class="tag">Interactive</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card bg-[#1E1E1E] rounded-lg overflow-hidden">
-                    <img src="https://placehold.co/600x400/666/FFF?text=Project+Four" alt="Project 4" class="w-full h-64 object-cover">
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold text-white mb-2">Project Title Four</h3>
-                        <p class="text-gray-400 mb-4">A complete rebranding for a global beverage company, including packaging and advertising campaigns.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="tag">Branding</span>
-                            <span class="tag">Packaging</span>
-                            <span class="tag">Campaign</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-[#1E1E1E]">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-1/3">
-                <img src="https://placehold.co/400x400/777/FFF?text=Your+Photo" alt="Your Name" class="rounded-full mx-auto">
-            </div>
-            <div class="md:w-2/3">
-                <h2 class="section-title mb-6 text-white">About Me</h2>
-                <p class="text-lg text-gray-400 mb-4">
-                    I am a passionate and experienced art director with over 10 years in the industry. I thrive on turning complex ideas into simple, beautiful, and effective visual solutions. My work is driven by a love for storytelling and a commitment to quality.
-                </p>
-                <p class="text-lg text-gray-400">
-                    Throughout my career, I've had the privilege of working with a diverse range of clients, from innovative startups to established global brands. I believe in a collaborative approach, working closely with teams to bring creative visions to life.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="section-title mb-4 text-white">Let's Create Together</h2>
-            <p class="max-w-xl mx-auto text-lg text-gray-400 mb-8">
-                Have a project in mind? I'm always open to new opportunities and collaborations.
-            </p>
-            <a href="mailto:your.email@example.com" class="text-2xl font-bold text-white hover:text-gray-300 transition-colors duration-300">
-                your.email@example.com
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-8 border-t border-gray-800">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-            <p class="text-gray-500">&copy; 2025 Your Name. All Rights Reserved.</p>
-            <div class="mt-4 md:mt-0">
-                <a href="#" class="text-gray-500 hover:text-white mx-2">LinkedIn</a>
-                <a href="#" class="text-gray-500 hover:text-white mx-2">Instagram</a>
-                <a href="#" class="text-gray-500 hover:text-white mx-2">Twitter</a>
-            </div>
-        </div>
-    </footer>
-
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Art Director Portfolio&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #121212;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #E0E0E0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hero-text {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: clamp(2.5rem, 10vw, 6rem);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 900;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.1;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: -0.02em;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.section-title {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: clamp(2rem, 8vw, 4rem);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.2;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.project-card {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.3s ease, box-shadow 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.project-card:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-10px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.tag {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: rgba(255, 255, 255, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0.25rem 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 9999px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.875rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: background-color 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.tag:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: rgba(255, 255, 255, 0.2);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.smooth-scroll {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scroll-behavior: smooth;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="smooth-scroll"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Header --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header class="fixed w-full top-0 z-50 bg-black bg-opacity-50 backdrop-blur-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6 py-4 flex justify-between items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#" class="text-xl font-bold tracking-wider"&gt;YOUR NAME&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#work" class="mx-2 text-gray-300 hover:text-white transition-colors duration-300"&gt;Work&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#about" class="mx-2 text-gray-300 hover:text-white transition-colors duration-300"&gt;About&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#contact" class="mx-2 text-gray-300 hover:text-white transition-colors duration-300"&gt;Contact&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Hero Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="hero" class="min-h-screen flex items-center justify-center text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1 class="hero-text text-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>A Creative Art Director &lt;br&gt; &amp; Visual Storyteller.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="mt-6 max-w-2xl mx-auto text-lg text-gray-400"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>I create impactful visual narratives that connect brands with their audiences.<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>Specializing in digital campaigns, branding, and interactive experiences.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#work" class="mt-8 inline-block bg-white text-black font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-colors duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>View My Work</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Work Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="work" class="py-20"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="section-title text-center mb-12 text-white"&gt;Featured Projects&lt;/h2&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Project 1 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project-card bg-[#1E1E1E] rounded-lg overflow-hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="https://placehold.co/600x400/333/FFF?text=Project+One" alt="Project 1" class="w-full h-64 object-cover"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="p-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-2xl font-bold text-white mb-2"&gt;Project Title One&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-400 mb-4"&gt;A brief description of the project, its goals, and your role. This was a campaign for a major tech brand.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex flex-wrap gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="tag"&gt;Art Direction&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="tag"&gt;Branding&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="tag"&gt;UI/UX&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Project 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project-card bg-[#1E1E1E] rounded-lg overflow-hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="https://placehold.co/600x400/444/FFF?text=Project+Two" alt="Project 2" class="w-full h-64 object-cover"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="p-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-2xl font-bold text-white mb-2"&gt;Project Title Two&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-400 mb-4"&gt;This project involved creating a unique visual identity for a fashion startup, from logo to lookbook.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex flex-wrap gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="tag"&gt;Visual Identity&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="tag"&gt;Photography&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="tag"&gt;Print&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Project 3 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project-card bg-[#1E1E1E] rounded-lg overflow-hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="https://placehold.co/600x400/555/FFF?text=Project+Three" alt="Project 3" class="w-full h-64 object-cover"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="p-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-2xl font-bold text-white mb-2"&gt;Project Title Three&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-400 mb-4"&gt;An interactive web experience for a music festival, designed to be engaging and user-friendly.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex flex-wrap gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="tag"&gt;Web Design&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="tag"&gt;Motion Graphics&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="tag"&gt;Interactive&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Project 4 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project-card bg-[#1E1E1E] rounded-lg overflow-hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="https://placehold.co/600x400/666/FFF?text=Project+Four" alt="Project 4" class="w-full h-64 object-cover"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="p-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-2xl font-bold text-white mb-2"&gt;Project Title Four&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-400 mb-4"&gt;A complete rebranding for a global beverage company, including packaging and advertising campaigns.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex flex-wrap gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="tag"&gt;Branding&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="tag"&gt;Packaging&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="tag"&gt;Campaign&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- About Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="about" class="py-20 bg-[#1E1E1E]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="md:w-1/3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/400x400/777/FFF?text=Your+Photo" alt="Your Name" class="rounded-full mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="md:w-2/3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="section-title mb-6 text-white"&gt;About Me&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-lg text-gray-400 mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>I am a passionate and experienced art director with over 10 years in the industry. I thrive on turning complex ideas into simple, beautiful, and effective visual solutions. My work is driven by a love for storytelling and a commitment to quality.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-lg text-gray-400"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Throughout my career, I've had the privilege of working with a diverse range of clients, from innovative startups to established global brands. I believe in a collaborative approach, working closely with teams to bring creative visions to life.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Contact Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="contact" class="py-20"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6 text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="section-title mb-4 text-white"&gt;Let's Create Together&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="max-w-xl mx-auto text-lg text-gray-400 mb-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Have a project in mind? I'm always open to new opportunities and collaborations.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="mailto:your.email@example.com" class="text-2xl font-bold text-white hover:text-gray-300 transition-colors duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>your.email@example.com</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Footer --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer class="py-8 border-t border-gray-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-500"&gt;&amp;copy; 2025 Your Name. All Rights Reserved.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mt-4 md:mt-0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#" class="text-gray-500 hover:text-white mx-2"&gt;LinkedIn&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#" class="text-gray-500 hover:text-white mx-2"&gt;Instagram&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#" class="text-gray-500 hover:text-white mx-2"&gt;Twitter&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
 </body>
 </html>
